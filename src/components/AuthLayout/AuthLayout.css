@@ -1,0 +1,15 @@
+.auth-window {
+  margin-top: calc(50vh - 300px);
+  display: flex;
+  justify-content: center;
+}
+
+.auth-conatiner {
+  max-width: 400px;
+}
+
+.auth-logo {
+  display: block;
+  margin: 0 auto;
+}
+
