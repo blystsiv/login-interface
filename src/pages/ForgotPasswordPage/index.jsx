@@ -1,12 +1,14 @@
+import './ForgotPasswordPage.css';
+
 const ForgotPasswordPage = () => {
   return (
     <>
-      <h1 className='auth-heading'>Forgot Password?</h1>
+      <h1 className='heading'>Forgot Password?</h1>
 
       <input className='input' type='text' placeholder='Enter your email' />
 
-      <button className='button mt-25 button--primary'>Send</button>
-      <button className='button mt-20 button--secondary'>Cancel</button>
+      <button className='button button--primary mt-25'>Send</button>
+      <button className='button button--secondary mt-20'>Cancel</button>
     </>
   );
 };
