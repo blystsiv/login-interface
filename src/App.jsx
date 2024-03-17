@@ -1,22 +1,17 @@
 import { Route, Routes } from 'react-router-dom';
-import CreateNewPasswordPage from './pages/CreateNewPasswordPage';
-import ForgotPasswordPage from './pages/ForgotPasswordPage';
-import LoginPage from './pages/LoginPage';
+import AuthLayout from './components/AuthLayout';
+import HomePage from './pages/HomePage';
+import NotFoundPage from './pages/NotFoundPage';
 
 const App = () => {
   return (
     <>
-      <div className='auth-window'>
-        <div className='auth-conatiner'>
-          <img className='auth-logo' src='/assets/logo.svg' alt='logo' />
-          
-          <Routes>
-            <Route path='/login' element={<LoginPage />} />
-            <Route path='/create-new' element={<CreateNewPasswordPage />} />
-            <Route path='/forgot' element={<ForgotPasswordPage />} />
-          </Routes>
-        </div>
-      </div>
+      <Routes>
+        <Route path='/' element={<HomePage />} />
+        <Route path='/auth' element={<NotFoundPage />} />
+        <Route path='/auth/*' element={<AuthLayout />} />
+        <Route path='*' element={<NotFoundPage />} />
+      </Routes>
     </>
   );
 };

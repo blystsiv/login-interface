@@ -1,3 +1,5 @@
+import { Button } from '../../components/Button';
+import Input from '../../components/Input';
 import './ForgotPasswordPage.css';
 
 const ForgotPasswordPage = () => {
@@ -5,10 +7,10 @@ const ForgotPasswordPage = () => {
     <>
       <h1 className='heading'>Forgot Password?</h1>
 
-      <input className='input' type='text' placeholder='Enter your email' />
+      <Input type='text' placeholder='Enter your email' />
 
-      <button className='button button--primary mt-25'>Send</button>
-      <button className='button button--secondary mt-20'>Cancel</button>
+      <Button className='button--primary mt-25'>Send</Button>
+      <Button className='button--secondary mt-20'>Cancel</Button>
     </>
   );
 };

@@ -1,44 +1,44 @@
 import { Link } from 'react-router-dom';
+import { Button } from '../../components/Button';
+import Input from '../../components/Input';
+import './LoginPage.css';
 
 const LoginPage = () => {
   return (
     <>
-      <h1 className='auth-heading'>Log in to your account</h1>
+      <h1 className='heading'>Log in to your account</h1>
 
-      <div className='auth-socials'>
-        <a className='auth-social-btn' href='#'>
-          <img className='auth-social-img' src='/assets/icons/google.svg' alt='google icon' />
-          <span className='auth-social-text'>Google</span>
+      <div className='login-socials'>
+        <a className='social-btn' href='#'>
+          <img className='social-btn-img' src='/assets/icons/google.svg' alt='google icon' />
+          <span className='social-btn-text'>Google</span>
         </a>
 
-        <a className='auth-social-btn' href='#'>
-          <img className='auth-social-img' src='/assets/icons/github.svg' alt='github icon' />
-          <span className='auth-social-text'>GitHub</span>
+        <a className='social-btn' href='#'>
+          <img className='social-btn-img' src='/assets/icons/github.svg' alt='github icon' />
+          <span className='social-btn-text'>GitHub</span>
         </a>
       </div>
 
-      <div className='auth-delimiter'>
-        <p className='auth-delimiter-text'>or</p>
+      <div className='delimiter'>
+        <p className='delimiter-text'>or</p>
       </div>
 
-      <input className='input' type='text' placeholder='Work email' />
+      <Input type='text' placeholder='Work email' className='mt-25' />
 
-      <div className='input-conatiner'>
-        <input className='input mt-25' type='password' placeholder='Password' />
-        <img className='input-icon' src='/assets/icons/eye.svg' alt='eye icon' />
-      </div>
+      <Input type='password' placeholder='Password' className='mt-25' />
 
-      <Link className='auth-message' to='/forgot'>
+      <Link className='login-message' to='/auth/forgot'>
         Forgot your password?
       </Link>
 
-      <button className='button mt-30 button--primary'>Log in to Qencode</button>
+      <Button className='button--primary mt-30'>Log in to Qencode</Button>
 
-      <p className='auth-text'>
+      <p className='login-text'>
         Is your company new to Qencode?{' '}
-        <a className='auth-link' href='#'>
+        <Link className='login-link' to='/'>
           Sign up
-        </a>
+        </Link>
       </p>
     </>
   );

@@ -1,0 +1,22 @@
+.button {
+  display: block;
+  border-radius: 8px;
+  width: 400px;
+  padding: 13px 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21px;
+  border: 1.2px solid transparent;
+  cursor: pointer;
+}
+
+.button--primary {
+  color: #ffffff;
+  background: #316fea;
+}
+
+.button--secondary {
+  background: #ffffff;
+  color: #060e1e;
+  border: 1.2px solid #d3d8dc;
+}
